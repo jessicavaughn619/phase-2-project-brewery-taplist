@@ -13,9 +13,13 @@ function Inventory({ beers, onUpdateInventory }) {
         />
     ))
     return (
-        <div>
-            <h1>Inventory</h1>
-            <Card.Group itemsPerRow={3}>{beerList}</Card.Group>
+        <div className="inventory">
+            <div className="heading">
+                <h1>Inventory</h1>
+            </div>
+            <div className="cards">
+                <Card.Group itemsPerRow={3}>{beerList}</Card.Group>
+            </div>
         </div>
     )
 }

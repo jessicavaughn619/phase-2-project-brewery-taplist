@@ -7,7 +7,6 @@ import AddBeer from "./AddBeer";
 
 function BeerList() {
 const [beers, setBeers] = useState([]);
-// const [showInventory, setShowInventory] = useState(false);
 
 useEffect(() => {
     fetch("http://localhost:3000/beers")
@@ -18,10 +17,6 @@ useEffect(() => {
 const beersOnTap = beers.filter((beer) => beer.status === "On Tap")
 
 const beersComingSoon = beers.filter((beer) => beer.status === "Coming Soon")
-
-// function handleClick() {
-//     setShowInventory((showInventory) => !showInventory);
-// }
 
 function handleUpdateInventory(updatedBeer) {
     const updatedBeers = beers.map((beer) => {
@@ -42,21 +37,21 @@ function handleAddNewBeer(newBeer) {
     return (
         <div>
             <Switch>
-            <Route exact path="/">
-            <OnTap 
-            beers={beersOnTap}/>
-            <ComingSoon 
-            beers={beersComingSoon}/>
-            </Route>
-            <Route path="/inventory">
-                <Inventory 
-                beers={beers}
-                onUpdateInventory={handleUpdateInventory}/>
-            </Route>
-            <Route path="/addbeer">
-                <AddBeer 
-                onAddNewBeer={handleAddNewBeer}/>
-            </Route>
+                <Route exact path="/">
+                    <OnTap 
+                    beers={beersOnTap}/>
+                    <ComingSoon 
+                    beers={beersComingSoon}/>
+                </Route>
+                <Route path="/inventory">
+                    <Inventory 
+                    beers={beers}
+                    onUpdateInventory={handleUpdateInventory}/>
+                </Route>
+                <Route path="/addbeer">
+                    <AddBeer 
+                    onAddNewBeer={handleAddNewBeer}/>
+                </Route>
             </Switch>
         </div>
     )

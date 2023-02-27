@@ -10,7 +10,7 @@
       "location": "Windsor, California",
       "abv": 8,
       "ibu": 100,
-      "status": "On Tap"
+      "status": "Coming Soon"
     },
     {
       "id": 2,
@@ -46,7 +46,7 @@
       "location": "Boulder, Colorado",
       "abv": 5.4,
       "ibu": 0,
-      "status": "On Tap"
+      "status": "Coming Soon"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "location": "Comstock, Michigan",
       "abv": 7,
       "ibu": 55,
-      "status": "On Tap"
+      "status": "x"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "location": "Fort Collins, Colorado",
       "abv": 5.2,
       "ibu": 15,
-      "status": "On Tap"
+      "status": "x"
     },
     {
       "id": 7,
@@ -129,7 +129,7 @@
       "location": "San Diego, California",
       "abv": "7",
       "ibu": "70",
-      "status": "On Tap",
+      "status": "Coming Soon",
       "id": 11
     }
   ]
