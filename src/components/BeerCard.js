@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card } from "semantic-ui-react";
 
-function BeerCard({ beer }) {
+function BeerCard({ beer, manageInventory }) {
     const { name, label, description, style, brewery, location, abv, ibu } = beer;
     const [showDetails, setShowDetails] = useState(false);
 
@@ -30,6 +30,11 @@ function BeerCard({ beer }) {
                 ABV: {abv} IBU: {ibu}
             </div> : null}
         </div>
+        {manageInventory ? 
+        <div className="manage-inventory">
+            <button>On Tap</button>
+            <button>Coming Soon</button>
+        </div> : null}
         </Card>
     )
 }

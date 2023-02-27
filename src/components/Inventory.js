@@ -3,10 +3,13 @@ import BeerCard from "./BeerCard";
 import { Card } from "semantic-ui-react";
 
 function Inventory({ beers }) {
+
     const beerList = beers.map((beer) => (
         <BeerCard 
         key={beer.id}
-        beer={beer}/>
+        beer={beer}
+        manageInventory={true}
+        />
     ))
     return (
         <div>
