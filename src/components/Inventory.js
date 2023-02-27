@@ -2,15 +2,14 @@ import React from "react";
 import BeerCard from "./BeerCard";
 import { Card } from "semantic-ui-react";
 
-function Inventory({ beers, onOnTapClick, onComingSoonClick }) {
+function Inventory({ beers, onUpdateInventory }) {
 
     const beerList = beers.map((beer) => (
         <BeerCard 
         key={beer.id}
         beer={beer}
         manageInventory={true}
-        onOnTapClick={onOnTapClick}
-        onComingSoonClick={onComingSoonClick}
+        onUpdateInventory={onUpdateInventory}
         />
     ))
     return (

@@ -13,21 +13,23 @@ useEffect(() => {
     .then(beers => setBeers(beers))
 }, [])
 
-const beersOnTap = beers.filter((beer) => beer.onTap)
+const beersOnTap = beers.filter((beer) => beer.status === "On Tap")
 
-const beersComingSoon = beers.filter((beer) => beer.comingSoon)
+const beersComingSoon = beers.filter((beer) => beer.status === "Coming Soon")
 
 function handleClick() {
     setShowInventory((showInventory) => !showInventory);
 }
 
-function handleOnTap(id) {
-    console.log(id);
-
-}
-
-function handleComingSoon(id) {
-    console.log(id);
+function handleUpdateInventory(updatedBeer) {
+    const updatedBeers = beers.map((beer) => {
+        if (beer.id === updatedBeer.id) {
+            return updatedBeer;
+        } else {
+            return beer;
+        }
+    })
+    setBeers(updatedBeers);
 }
 
     return (
@@ -40,8 +42,7 @@ function handleComingSoon(id) {
             {showInventory ? 
             <Inventory 
             beers={beers}
-            onOnTapClick={handleOnTap}
-            onComingSoonClick={handleComingSoon}/> : null}
+            onUpdateInventory={handleUpdateInventory}/> : null}
         </div>
     )
 }
