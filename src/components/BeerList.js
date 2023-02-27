@@ -17,15 +17,20 @@ const beersOnTap = beers.filter((beer) => beer.onTap)
 
 const beersComingSoon = beers.filter((beer) => beer.comingSoon)
 
+function handleClick() {
+    setShowInventory((showInventory) => !showInventory);
+}
+
     return (
         <div>
-            {showInventory ? 
-            <Inventory 
-            beers={beers}/> : null}
             <OnTap 
             beers={beersOnTap}/>
             <ComingSoon 
             beers={beersComingSoon}/>
+            <button onClick={handleClick}>{showInventory ? "Hide Beer Repository" : "Show Beer Repository"}</button>
+            {showInventory ? 
+            <Inventory 
+            beers={beers}/> : null}
         </div>
     )
 }
