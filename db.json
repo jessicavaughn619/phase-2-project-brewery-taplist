@@ -10,7 +10,7 @@
       "location": "Windsor, California",
       "abv": 8,
       "ibu": 100,
-      "status": "Coming Soon"
+      "status": "On Tap"
     },
     {
       "id": 2,
@@ -34,7 +34,7 @@
       "location": "Denver, Colorado",
       "abv": 4.9,
       "ibu": 0,
-      "status": "x"
+      "status": "On Tap"
     },
     {
       "id": 4,
@@ -70,7 +70,7 @@
       "location": "Fort Collins, Colorado",
       "abv": 5.2,
       "ibu": 15,
-      "status": "Coming Soon"
+      "status": "On Tap"
     },
     {
       "id": 7,
