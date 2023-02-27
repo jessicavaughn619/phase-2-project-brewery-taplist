@@ -119,6 +119,18 @@
       "abv": 5.3,
       "ibu": 0,
       "status": "Coming Soon"
+    },
+    {
+      "name": "Grapefruit Sculpin",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-285658_c3745_sm.jpeg",
+      "description": "Our Grapefruit Sculpin is the latest take on our signature IPA. Some may say there are few ways to improve Sculpin’s unique flavor, but the tart freshness of grapefruit perfectly complements our IPA’s citrusy hop character. Grapefruit’s a winter fruit, but this easy-drinking ale tastes like summer.",
+      "style": "IPA - American",
+      "brewery": "Ballast Point Brewing Company",
+      "location": "San Diego, California",
+      "abv": "7",
+      "ibu": "70",
+      "status": "On Tap",
+      "id": 11
     }
   ]
 }

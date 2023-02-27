@@ -34,6 +34,11 @@ function handleUpdateInventory(updatedBeer) {
     setBeers(updatedBeers);
 }
 
+function handleAddNewBeer(newBeer) {
+    const updatedBeers = [{...beers, newBeer}]
+    setBeers(updatedBeers)
+}
+
     return (
         <div>
             <Switch>
@@ -49,7 +54,8 @@ function handleUpdateInventory(updatedBeer) {
                 onUpdateInventory={handleUpdateInventory}/>
             </Route>
             <Route path="/addbeer">
-                <AddBeer />
+                <AddBeer 
+                onAddNewBeer={handleAddNewBeer}/>
             </Route>
             </Switch>
         </div>
