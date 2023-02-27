@@ -21,6 +21,15 @@ function handleClick() {
     setShowInventory((showInventory) => !showInventory);
 }
 
+function handleOnTap(id) {
+    console.log(id);
+
+}
+
+function handleComingSoon(id) {
+    console.log(id);
+}
+
     return (
         <div>
             <OnTap 
@@ -30,7 +39,9 @@ function handleClick() {
             <button onClick={handleClick}>{showInventory ? "Hide Beer Repository" : "Show Beer Repository"}</button>
             {showInventory ? 
             <Inventory 
-            beers={beers}/> : null}
+            beers={beers}
+            onOnTapClick={handleOnTap}
+            onComingSoonClick={handleComingSoon}/> : null}
         </div>
     )
 }

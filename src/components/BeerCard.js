@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import { Card } from "semantic-ui-react";
 
-function BeerCard({ beer, manageInventory }) {
-    const { name, label, description, style, brewery, location, abv, ibu } = beer;
+function BeerCard({ beer, manageInventory, onOnTapClick, onComingSoonClick }) {
+    const { name, label, description, style, brewery, location, abv, ibu, id } = beer;
     const [showDetails, setShowDetails] = useState(false);
 
     function handleClick() {
         setShowDetails((showDetails) => !showDetails);
+    }
+
+    function handleOnTapClick(event) {
+        onOnTapClick(event.target.value);
+    }
+
+    function handleComingSoonClick(event) {
+        onComingSoonClick(event.target.value);
     }
 
     return (
@@ -32,8 +40,10 @@ function BeerCard({ beer, manageInventory }) {
         </div>
         {manageInventory ? 
         <div className="manage-inventory">
-            <button>On Tap</button>
-            <button>Coming Soon</button>
+            <button onClick={handleOnTapClick}
+            value={id}>On Tap</button>
+            <button onClick={handleComingSoonClick}
+            value={id}>Coming Soon</button>
         </div> : null}
         </Card>
     )
