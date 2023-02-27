@@ -1,10 +1,14 @@
 import React from "react";
 
 function Footer() {
+    const today = new Date().getFullYear();
+
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer className="footer">
+            Made with ❤️ & 🍺
+            <br />
+            © Jessica Vaughn {today}
+        </footer>
     )
 }
 

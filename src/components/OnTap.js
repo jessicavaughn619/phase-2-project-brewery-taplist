@@ -9,9 +9,13 @@ function OnTap({ beers }) {
         beer={beer}/>
     ))
     return (
-        <div>
-            <h2>On Tap</h2>
-            <Card.Group itemsPerRow={3}>{onTapBeerList}</Card.Group>
+        <div className="on-tap">
+            <div className="heading">
+                <h2>On Tap</h2>
+            </div>
+            <div className="cards">
+                <Card.Group itemsPerRow={3}>{onTapBeerList}</Card.Group>
+            </div>
         </div>
     )
 }

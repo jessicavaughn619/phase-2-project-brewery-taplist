@@ -38,46 +38,55 @@ function AddBeer({ onAddNewBeer }) {
     return(
         <div>
             <h1>Add New Beer</h1>
-            <form onSubmit={handleSubmit}>
-                Name: <input 
+            <form onSubmit={handleSubmit} className="submit-form">
+                Name: <br /><input 
                 type="text" 
                 value={name} 
                 onChange={(e) => setName(e.target.value)}></input>
-                Label: <input 
+                <br />
+                Label: <br /><input 
                 type="text" 
                 value={label} 
                 onChange={(e) => setLabel(e.target.value)}></input>
-                Description: <input 
+                <br />
+                Description: <br /><input 
                 type="text" 
                 value={description} 
                 onChange={(e) => setDescription(e.target.value)}></input>
-                Style: <input 
+                <br />
+                Style: <br /><input 
                 type="text" 
                 value={style} 
                 onChange={(e) => setStyle(e.target.value)}></input>
-                Brewery: <input 
+                <br />
+                Brewery: <br /><input 
                 type="text" 
                 value={brewery} 
                 onChange={(e) => setBrewery(e.target.value)}></input>
-                Location: <input 
+                <br />
+                Location: <br /><input 
                 type="text" 
                 value={location} 
                 onChange={(e) => setLocation(e.target.value)}></input>
-                ABV: <input 
+                <br />
+                ABV: <br /><input 
                 type="text" 
                 value={abv} 
                 onChange={(e) => setAbv(e.target.value)}></input>
-                IBU: <input 
+                <br />
+                IBU: <br /><input 
                 type="text" 
                 value={ibu} 
                 onChange={(e) => setIbu(e.target.value)}></input>
-                Status: <select value={status} onChange={(e) => setStatus(e.target.value)}>
+                <br />
+                Status: <br /><select value={status} onChange={(e) => setStatus(e.target.value)}>
                     <option>---</option>
                     <option>On Tap</option>
                     <option>Coming Soon</option>
                     <option>X</option>
                 </select>
-                <button>Add Beer</button>
+                <br />
+                <button className="submit-button">Add Beer</button>
             </form>
         </div>
     )

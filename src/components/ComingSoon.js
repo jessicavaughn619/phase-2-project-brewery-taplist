@@ -9,9 +9,13 @@ function ComingSoon({ beers }) {
         beer={beer}/>
     ))
     return (
-        <div>
-            <h2>Coming Soon</h2>
-            <Card.Group itemsPerRow={3}>{comingSoonBeerList}</Card.Group>
+        <div className="coming-soon">
+            <div className="heading">
+                <h2>Coming Soon</h2>
+            </div>
+            <div className="cards">
+                <Card.Group itemsPerRow={3}>{comingSoonBeerList}</Card.Group>
+            </div>
         </div>
     )
 }

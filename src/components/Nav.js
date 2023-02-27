@@ -7,7 +7,7 @@ const linkStyles = {
     height: "50px",
     padding: "10px",
     margin: "0 6px 6px",
-    background: "blue",
+    background: "#a87532",
     textDecoration: "none",
     color: "white",
   };
@@ -20,7 +20,7 @@ function Nav() {
                 exact
                 style={linkStyles}
                 activeStyle={{
-                background: "darkblue",
+                background: "#cfa267",
                 }}
             >
                 Home
@@ -30,7 +30,7 @@ function Nav() {
                 exact
                 style={linkStyles}
                 activeStyle={{
-                background: "darkblue",
+                background: "#cfa267",
                 }}
             >
                 Inventory
@@ -40,7 +40,7 @@ function Nav() {
                 exact
                 style={linkStyles}
                 activeStyle={{
-                background: "darkblue",
+                background: "#cfa267",
                 }}
             >
                 Add New Beer
