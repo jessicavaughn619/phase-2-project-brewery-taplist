@@ -1,16 +1,16 @@
 import React from "react";
-import Card from "./Card";
+import BeerCard from "./BeerCard";
+import { Card } from "semantic-ui-react";
 
 function Inventory({ beers }) {
-    console.log(beers);
     const beerList = beers.map((beer) => (
-        <Card 
+        <BeerCard 
         key={beer.id}
-        name={beer.name}/>
+        beer={beer}/>
     ))
     return (
         <div>
-            {beerList}
+            <Card.Group itemsPerRow={3}>{beerList}</Card.Group>
         </div>
     )
 }
