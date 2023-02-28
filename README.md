@@ -16,7 +16,7 @@ Open a new terminal and run $ npm start. As db.json is already running on your l
 
 Users initially land on the home page which displays beers currently on tap and beers that are coming soon. Each beer is displayed in a card showing the beer logo, name of the beer, and beer style. Hover over a card to flip the card and show more details, including the brewery and location, description of the beer, and ABV and IBU.
 
-Users can navigate to the inventory page to manage all of the beers in the repository. On this page, utilize each beer's dropdown menu to move it to 'On Tap,' 'Coming Soon,' or 'X' meaning it is held in inventory but not on top or coming soon. After changing the status of each beer, users can navigate back to the home page to see their new on tap and coming soon lists rendered.
+Users can navigate to the inventory page to manage all of the beers in the repository. Users can search through the inventory for beers by name or beer style. On this page, utilize each beer's dropdown menu to move it to 'On Tap,' 'Coming Soon,' or 'X' meaning it is held in inventory but not on top or coming soon. After changing the status of each beer, users can navigate back to the home page to see their new on tap and coming soon lists rendered.
 
 Navigate to the 'Add New Beer' link to add a new beer to the inventory. Once this form in submitted, both the inventory and home page are re-rendered to show the new beer.
 
