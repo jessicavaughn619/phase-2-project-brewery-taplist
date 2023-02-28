@@ -3,10 +3,10 @@ import "./Search.css";
 
 function Search({ search, onSearch }) {
     return (
-        <div>
+        <div className="search-component">
             <input 
             type="text"
-            name="search"
+            className="search-input"
             placeholder="Search by beer name or style"
             value={search}
             onChange={(e) => onSearch(e.target.value)}></input>

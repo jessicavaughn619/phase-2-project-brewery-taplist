@@ -66,3 +66,7 @@
     font-weight: bolder;
     text-decoration: underline;
 }
+
+.select {
+    width: 50%;
+}

@@ -45,7 +45,10 @@ function BeerCard({ beer, manageInventory, onUpdateInventory }) {
             </div>
             {manageInventory ? 
             <div className="manage-inventory">
-                <select onChange={handleInventoryChange} defaultValue={status}>
+                <select 
+                className="select"
+                onChange={handleInventoryChange} 
+                defaultValue={status}>
                     <option
                     value="On Tap">On Tap</option>
                     <option

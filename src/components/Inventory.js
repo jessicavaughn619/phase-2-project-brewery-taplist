@@ -17,9 +17,6 @@ function Inventory({ beers, onUpdateInventory, search, onSearch }) {
 
     return (
         <div className="inventory">
-            <div className="heading">
-                <h2>Inventory</h2>
-            </div>
             <div className="search">
                 <Search 
                     search={search}
