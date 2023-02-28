@@ -1,6 +1,7 @@
 import React from "react";
 import BeerCard from "./BeerCard";
 import { Card } from "semantic-ui-react";
+import "./ComingSoon.css";
 
 function ComingSoon({ beers }) {
     const comingSoonBeerList = beers.map((beer) => (

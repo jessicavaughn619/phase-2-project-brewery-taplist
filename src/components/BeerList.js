@@ -4,6 +4,7 @@ import Inventory from "./Inventory";
 import OnTap from "./OnTap";
 import ComingSoon from "./ComingSoon";
 import AddBeer from "./AddBeer";
+import "./BeerList.css";
 
 function BeerList() {
 const [beers, setBeers] = useState([]);

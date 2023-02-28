@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card } from "semantic-ui-react";
+import "./BeerCard.css";
 
 function BeerCard({ beer, manageInventory, onUpdateInventory }) {
     const { name, label, description, style, brewery, location, abv, ibu, status } = beer;

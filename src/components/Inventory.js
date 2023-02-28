@@ -1,6 +1,7 @@
 import React from "react";
 import BeerCard from "./BeerCard";
 import { Card } from "semantic-ui-react";
+import "./Inventory.css";
 
 function Inventory({ beers, onUpdateInventory }) {
 

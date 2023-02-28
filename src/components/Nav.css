@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav :hover {
+  color: black;
+  cursor: pointer;
+}
+
+.link-styles {
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+  background: #a87532;
+  color: white;
+}
+
+.link-styles.active {
+  background: #cfa267;
+}

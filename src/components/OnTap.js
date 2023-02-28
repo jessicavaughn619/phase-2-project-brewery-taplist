@@ -1,6 +1,7 @@
 import React from "react";
 import BeerCard from "./BeerCard";
 import { Card } from "semantic-ui-react";
+import "./OnTap.css";
 
 function OnTap({ beers }) {
     const onTapBeerList = beers.map((beer) => (
