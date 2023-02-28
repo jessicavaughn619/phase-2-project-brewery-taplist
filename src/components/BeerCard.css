@@ -1,0 +1,47 @@
+.beer-card {
+    width: 100%;
+    height: 200px;
+    border: solid #a87532 2px;
+    perspective: 1000px;
+}
+
+.beer-card :hover {
+    cursor: pointer;
+}
+
+.beer-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.beer-card:hover .beer-card-inner {
+    transform: rotateY(180deg);
+}
+
+.beer-card-front, .beer-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.beer-card-front {
+    background-color: white;
+    color: #362003;
+    padding: 25px;
+}
+
+.beer-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: #362003;
+    font-size: 12px;
+    transform: rotateY(180deg);
+}
