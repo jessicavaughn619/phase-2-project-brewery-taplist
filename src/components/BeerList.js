@@ -31,8 +31,9 @@ function handleUpdateInventory(updatedBeer) {
 }
 
 function handleAddNewBeer(newBeer) {
-    const updatedBeers = [{...beers, newBeer}]
-    setBeers(updatedBeers)
+    const updatedBeers = [{...beers, newBeer}];
+    console.log(updatedBeers);
+    setBeers(updatedBeers);
 }
 
     return (

@@ -22,7 +22,7 @@
       "location": "Windsor, California",
       "abv": 10.25,
       "ibu": 0,
-      "status": "Coming Soon"
+      "status": "On Tap"
     },
     {
       "id": 3,
@@ -143,6 +143,54 @@
       "ibu": "12",
       "status": "Coming Soon",
       "id": 12
+    },
+    {
+      "name": "Punkin Ale",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-4946504_b39d1_sm.jpeg",
+      "description": "A full-bodied brown ale with smooth hints of pumpkin and brown sugar. ",
+      "style": "Pumpkin / Yam Beer",
+      "brewery": "Dogfish Head Craft",
+      "location": "Milton, Delaware",
+      "abv": "7",
+      "ibu": "28",
+      "status": "X",
+      "id": 13
+    },
+    {
+      "name": "Hey Pard' Pils",
+      "label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "description": "Pilsner style lager that is crisp, clean, slightly sweet.",
+      "style": "Pilsner",
+      "brewery": "Danico Brewing Company",
+      "location": "Denver, Colorado",
+      "abv": "5.5",
+      "ibu": "0",
+      "status": "On Tap",
+      "id": 14
+    },
+    {
+      "name": "Apricot Wheat",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-4868_df8af_sm.jpeg",
+      "description": "Our easy drinking wheat beer is light in color and body ... perfect for those looking for a lighter taste.",
+      "style": "Fruit Beer",
+      "brewery": "Ithaca Beer Company",
+      "location": "Ithaca, New York",
+      "abv": "4.9",
+      "ibu": "0",
+      "status": "X",
+      "id": 15
+    },
+    {
+      "name": "Dragons & YumYums",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-2522775_4fbe0_sm.jpeg",
+      "description": "A music collaboration of epic proportions with The Flaming Lips, this lip smackingly tart pale ale is brewed with dragonfruit, yumberry, passion fruit, pear juice and black carrot juice for an explosion of fruit in every sip!",
+      "style": "Pale Ale - American",
+      "brewery": "Dogfish Head Craft Brewery",
+      "location": "Milton, Delaware",
+      "abv": "6.5",
+      "ibu": "25",
+      "status": "X",
+      "id": 16
     }
   ]
 }

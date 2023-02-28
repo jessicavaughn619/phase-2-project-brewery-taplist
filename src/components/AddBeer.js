@@ -14,8 +14,7 @@ function AddBeer({ onAddNewBeer }) {
 
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    function handleSubmit(e) {
-        e.preventDefault();
+    function handleSubmit() {
         const formData = {
             name,
             label,
