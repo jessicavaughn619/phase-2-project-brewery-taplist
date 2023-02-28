@@ -36,7 +36,7 @@ function handleAddNewBeer(newBeer) {
 }
 
     return (
-        <div>
+        <div className="beer-list">
             <Switch>
                 <Route exact path="/">
                     <OnTap 
