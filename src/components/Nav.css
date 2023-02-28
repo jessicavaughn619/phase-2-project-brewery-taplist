@@ -16,6 +16,7 @@
   margin: 10px;
   background: #a87532;
   color: white;
+  border: solid 1px #362003;
 }
 
 .link-styles.active {
