@@ -10,7 +10,7 @@
       "location": "Windsor, California",
       "abv": 8,
       "ibu": 100,
-      "status": "On Tap"
+      "status": "x"
     },
     {
       "id": 2,
@@ -106,7 +106,7 @@
       "location": "Fort Collins, Colorado",
       "abv": 4.6,
       "ibu": 21,
-      "status": ""
+      "status": "x"
     },
     {
       "id": 10,
@@ -141,7 +141,7 @@
       "location": "Salt Lake City, Utah",
       "abv": "9",
       "ibu": "12",
-      "status": "Coming Soon",
+      "status": "On Tap",
       "id": 12
     },
     {
@@ -153,7 +153,7 @@
       "location": "Milton, Delaware",
       "abv": "7",
       "ibu": "28",
-      "status": "X",
+      "status": "x",
       "id": 13
     },
     {
@@ -165,7 +165,7 @@
       "location": "Denver, Colorado",
       "abv": "5.5",
       "ibu": "0",
-      "status": "On Tap",
+      "status": "x",
       "id": 14
     },
     {
