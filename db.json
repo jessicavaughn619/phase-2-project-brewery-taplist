@@ -10,7 +10,7 @@
       "location": "Windsor, California",
       "abv": 8,
       "ibu": 100,
-      "status": "Coming Soon"
+      "status": "On Tap"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "location": "Windsor, California",
       "abv": 10.25,
       "ibu": 0,
-      "status": "On Tap"
+      "status": "Coming Soon"
     },
     {
       "id": 3,
@@ -46,7 +46,7 @@
       "location": "Boulder, Colorado",
       "abv": 5.4,
       "ibu": 0,
-      "status": "Coming Soon"
+      "status": "On Tap"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "location": "Comstock, Michigan",
       "abv": 7,
       "ibu": 55,
-      "status": "x"
+      "status": "Coming Soon"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "location": "Fort Collins, Colorado",
       "abv": 5.2,
       "ibu": 15,
-      "status": "x"
+      "status": "On Tap"
     },
     {
       "id": 7,
@@ -94,7 +94,7 @@
       "location": "Fort Collins, Colorado",
       "abv": 5.3,
       "ibu": 27,
-      "status": "Coming Soon"
+      "status": "On Tap"
     },
     {
       "id": 9,
@@ -118,7 +118,7 @@
       "location": "Littleton, Colorado",
       "abv": 5.3,
       "ibu": 0,
-      "status": "Coming Soon"
+      "status": "On Tap"
     },
     {
       "name": "Grapefruit Sculpin",
@@ -131,6 +131,18 @@
       "ibu": "70",
       "status": "Coming Soon",
       "id": 11
+    },
+    {
+      "name": "Brainless Raspberries",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-322030_047d4_sm.jpeg",
+      "description": "Hints of raspberry bubble gum flavors from the Belgian yeast and fresh raspberries tease the pallet in this Brainless® offering.",
+      "style": "Fruit Beer",
+      "brewery": "Epic Brewing Company",
+      "location": "Salt Lake City, Utah",
+      "abv": "9",
+      "ibu": "12",
+      "status": "Coming Soon",
+      "id": 12
     }
   ]
 }

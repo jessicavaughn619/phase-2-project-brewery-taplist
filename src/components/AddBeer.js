@@ -12,6 +12,8 @@ function AddBeer({ onAddNewBeer }) {
     const [ibu, setIbu] = useState("");
     const [status, setStatus] = useState("");
 
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
     function handleSubmit(e) {
         e.preventDefault();
         const formData = {
@@ -24,7 +26,7 @@ function AddBeer({ onAddNewBeer }) {
             abv,
             ibu,
             status
-        }
+        };
         fetch("http://localhost:3000/beers", {
             method: "POST",
             headers: {
@@ -33,7 +35,8 @@ function AddBeer({ onAddNewBeer }) {
             body: JSON.stringify(formData),
         })
         .then(res => res.json())
-        .then((newBeer) => onAddNewBeer(newBeer))
+        .then((newBeer) => onAddNewBeer(newBeer));
+        setIsSubmitted(true);
     }
 
     return(
@@ -42,45 +45,57 @@ function AddBeer({ onAddNewBeer }) {
             <form onSubmit={handleSubmit} className="submit-form">
                 Name: <br /><input 
                 type="text" 
-                value={name} 
+                value={name}
+                required="required"
                 onChange={(e) => setName(e.target.value)}></input>
                 <br />
                 Label: <br /><input 
                 type="text" 
                 value={label} 
+                required="required"
                 onChange={(e) => setLabel(e.target.value)}></input>
                 <br />
                 Description: <br /><input 
                 type="text" 
                 value={description} 
+                required="required"
                 onChange={(e) => setDescription(e.target.value)}></input>
                 <br />
                 Style: <br /><input 
                 type="text" 
                 value={style} 
+                required="required"
                 onChange={(e) => setStyle(e.target.value)}></input>
                 <br />
                 Brewery: <br /><input 
                 type="text" 
                 value={brewery} 
+                required="required"
                 onChange={(e) => setBrewery(e.target.value)}></input>
                 <br />
                 Location: <br /><input 
                 type="text" 
                 value={location} 
+                required="required"
                 onChange={(e) => setLocation(e.target.value)}></input>
                 <br />
                 ABV: <br /><input 
                 type="text" 
                 value={abv} 
+                required="required"
                 onChange={(e) => setAbv(e.target.value)}></input>
                 <br />
                 IBU: <br /><input 
                 type="text" 
                 value={ibu} 
+                required="required"
                 onChange={(e) => setIbu(e.target.value)}></input>
                 <br />
-                Status: <br /><select value={status} onChange={(e) => setStatus(e.target.value)}>
+                Status: <br />
+                <select 
+                value={status} 
+                required
+                onChange={(e) => setStatus(e.target.value)}>
                     <option>---</option>
                     <option>On Tap</option>
                     <option>Coming Soon</option>
@@ -88,6 +103,9 @@ function AddBeer({ onAddNewBeer }) {
                 </select>
                 <br />
                 <button className="submit-button">Add Beer</button>
+            {isSubmitted ? (
+                <div className="success">Form submitted successfully!</div>
+            ) : null}
             </form>
         </div>
     )
