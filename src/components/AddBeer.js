@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./AddBeer.css";
 
 function AddBeer({ onAddNewBeer }) {
     const [name, setName] = useState("");
@@ -37,7 +38,7 @@ function AddBeer({ onAddNewBeer }) {
 
     return(
         <div>
-            <h1>Add New Beer</h1>
+            <h2>Add New Beer</h2>
             <form onSubmit={handleSubmit} className="submit-form">
                 Name: <br /><input 
                 type="text" 

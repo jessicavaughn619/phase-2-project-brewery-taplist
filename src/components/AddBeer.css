@@ -1,6 +1,6 @@
 input {
     width: 75%;
-    padding: 12px 20px;
+    padding: 10px 15px;
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 5px;
@@ -12,7 +12,7 @@ input {
   }
   
   .submit-button {
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px;
     margin: 10px 0;
     border-radius: 5px;
