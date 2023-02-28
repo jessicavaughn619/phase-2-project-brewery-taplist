@@ -8,6 +8,7 @@ import "./BeerList.css";
 
 function BeerList() {
 const [beers, setBeers] = useState([]);
+const [search, setSearch] = useState("");
 
 useEffect(() => {
     fetch("http://localhost:3000/beers")
@@ -36,6 +37,14 @@ function handleAddNewBeer(newBeer) {
     setBeers(updatedBeers);
 }
 
+const updatedBeers = beers.filter((beer) => {
+    if (beer.name.toLowerCase().includes(search.toLowerCase())) {
+        return true;
+    } else if (beer.style.toLowerCase().includes(search.toLowerCase())) {
+        return true;
+    }
+});
+
     return (
         <div className="beer-list">
             <Switch>
@@ -47,7 +56,9 @@ function handleAddNewBeer(newBeer) {
                 </Route>
                 <Route path="/inventory">
                     <Inventory 
-                    beers={beers}
+                    beers={updatedBeers}
+                    search={search}
+                    onSearch={setSearch}
                     onUpdateInventory={handleUpdateInventory}/>
                 </Route>
                 <Route path="/addbeer">

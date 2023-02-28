@@ -1,9 +1,10 @@
 import React from "react";
 import BeerCard from "./BeerCard";
+import Search from "./Search";
 import { Card } from "semantic-ui-react";
 import "./Inventory.css";
 
-function Inventory({ beers, onUpdateInventory }) {
+function Inventory({ beers, onUpdateInventory, search, onSearch }) {
 
     const beerList = beers.map((beer) => (
         <BeerCard 
@@ -13,10 +14,17 @@ function Inventory({ beers, onUpdateInventory }) {
         onUpdateInventory={onUpdateInventory}
         />
     ))
+
     return (
         <div className="inventory">
             <div className="heading">
                 <h2>Inventory</h2>
+            </div>
+            <div className="search">
+                <Search 
+                    search={search}
+                    onSearch={onSearch}
+                />
             </div>
             <div className="cards">
                 <Card.Group itemsPerRow={3}>{beerList}</Card.Group>
