@@ -12,8 +12,6 @@ function AddBeer({ onAddNewBeer }) {
     const [ibu, setIbu] = useState("");
     const [status, setStatus] = useState("");
 
-    const [isSubmitted, setIsSubmitted] = useState(false);
-
     function handleSubmit() {
         const formData = {
             name,
@@ -35,32 +33,32 @@ function AddBeer({ onAddNewBeer }) {
         })
         .then(res => res.json())
         .then((newBeer) => onAddNewBeer(newBeer));
-        setIsSubmitted(true);
     }
 
     return(
-        <div>
-            <h2>Add New Beer</h2>
+        <div className="add-new-beer">
             <form onSubmit={handleSubmit} className="submit-form">
-                Name: <br /><input 
+                <br />Beer Name:
+                <input 
                 type="text" 
                 value={name}
                 required="required"
                 onChange={(e) => setName(e.target.value)}></input>
                 <br />
-                Label: <br /><input 
+                Label URL: <br /><input 
                 type="text" 
                 value={label} 
                 required="required"
                 onChange={(e) => setLabel(e.target.value)}></input>
                 <br />
-                Description: <br /><input 
+                Description: <br /><textarea 
                 type="text" 
                 value={description} 
+                rows="6"
                 required="required"
-                onChange={(e) => setDescription(e.target.value)}></input>
+                onChange={(e) => setDescription(e.target.value)}></textarea>
                 <br />
-                Style: <br /><input 
+                Beer Style: <br /><input 
                 type="text" 
                 value={style} 
                 required="required"
@@ -72,7 +70,7 @@ function AddBeer({ onAddNewBeer }) {
                 required="required"
                 onChange={(e) => setBrewery(e.target.value)}></input>
                 <br />
-                Location: <br /><input 
+                Brewery Location: <br /><input 
                 type="text" 
                 value={location} 
                 required="required"
@@ -102,9 +100,6 @@ function AddBeer({ onAddNewBeer }) {
                 </select>
                 <br />
                 <button className="submit-button">Add Beer</button>
-            {isSubmitted ? (
-                <div className="success">Form submitted successfully!</div>
-            ) : null}
             </form>
         </div>
     )

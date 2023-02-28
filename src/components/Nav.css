@@ -8,6 +8,7 @@
 .nav :hover {
   color: #362003;
   cursor: pointer;
+  border: 1.5px solid #362003;
 }
 
 .link-styles {
@@ -18,6 +19,7 @@
   background: #a87532;
   color: white;
   border: solid 1px #362003;
+  border-radius: 5px;
 }
 
 .link-styles.active {

@@ -1,19 +1,37 @@
-input {
-    width: 75%;
+input , textarea, select , button{
+    width: 100%;
     padding: 10px 15px;
     margin: 8px 0;
     box-sizing: border-box;
+    border: 1px solid #362003;
     border-radius: 5px;
   }
-  
+
+  input:focus {
+    border: 2px solid #362003;
+  }
+
   .submit-form {
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
     margin: 20px;
-    padding: 10px;
+    padding: 30px;
+    border: 2px solid #362003;
+    border-radius: 5px;
   }
   
   .submit-button {
+    width: 100%;
     font-size: 16px;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
+    background-color: #a87532;
+    color: white;
+  }
+
+  .submit-button:hover {
+    cursor: pointer;
+    color: #362003;
+    border: 1.5px solid #362003;
   }

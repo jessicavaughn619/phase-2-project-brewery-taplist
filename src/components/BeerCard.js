@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card } from "semantic-ui-react";
 import "./BeerCard.css";
+import abvImage from "../images/abv.png";
+import ibuImage from "../images/ibu.png";
 
 function BeerCard({ beer, manageInventory, onUpdateInventory }) {
     const { name, label, description, style, brewery, location, abv, ibu, status } = beer;
@@ -39,7 +41,10 @@ function BeerCard({ beer, manageInventory, onUpdateInventory }) {
                     <div className="details">
                         {description}
                         <br />
-                        ABV: {abv} IBU: {ibu}
+                    </div>
+                    <div className="units">
+                        <img src={abvImage} className="image"/> {abv}
+                        <img src={ibuImage} className="image"/> {ibu}
                     </div>
                 </div>
             </div>
