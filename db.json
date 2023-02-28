@@ -191,6 +191,18 @@
       "ibu": "25",
       "status": "X",
       "id": 16
+    },
+    {
+      "name": "Raspberry Blonde",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-1880272_31389_sm.jpeg",
+      "description": "Raspberry Blonde empowers the senses with fresh raspberries and a lightly tart finish.",
+      "style": "Fruit Beer",
+      "brewery": "4 Noses Brewing Company",
+      "location": "Broomfield, Colorado",
+      "abv": "6.3",
+      "ibu": "12",
+      "status": "Coming Soon",
+      "id": 17
     }
   ]
 }
