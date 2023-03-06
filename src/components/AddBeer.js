@@ -13,6 +13,7 @@ function AddBeer({ onAddNewBeer }) {
     const [status, setStatus] = useState("");
 
     function handleSubmit() {
+        alert("New beer added!");
         const formData = {
             name,
             label,
@@ -23,7 +24,7 @@ function AddBeer({ onAddNewBeer }) {
             abv,
             ibu,
             status
-        };
+        }
         fetch("http://localhost:3000/beers", {
             method: "POST",
             headers: {
@@ -32,10 +33,10 @@ function AddBeer({ onAddNewBeer }) {
             body: JSON.stringify(formData),
         })
         .then(res => res.json())
-        .then((newBeer) => onAddNewBeer(newBeer));
+        .then(newBeer => onAddNewBeer(newBeer))
     }
 
-    return(
+    return (
         <div className="add-new-beer">
             <form onSubmit={handleSubmit} className="submit-form">
                 <br />Beer Name:

@@ -106,7 +106,7 @@
       "location": "Fort Collins, Colorado",
       "abv": 4.6,
       "ibu": 21,
-      "status": "x"
+      "status": "On Tap"
     },
     {
       "id": 10,
@@ -153,7 +153,7 @@
       "location": "Milton, Delaware",
       "abv": "7",
       "ibu": "28",
-      "status": "x",
+      "status": "Coming Soon",
       "id": 13
     },
     {
@@ -165,7 +165,7 @@
       "location": "Denver, Colorado",
       "abv": "5.5",
       "ibu": "0",
-      "status": "x",
+      "status": "Coming Soon",
       "id": 14
     },
     {
@@ -203,6 +203,54 @@
       "ibu": "12",
       "status": "Coming Soon",
       "id": 17
+    },
+    {
+      "name": "A Beer of Very Little Brain",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-1184451_4ca33_sm.jpeg",
+      "description": "A warm lager fermentation creates a unique flavor profile that       perfectly compliments this style of beer.",
+      "style": "California Common",
+      "brewery": "Fiction Beer Company",
+      "location": "Denver, Colorado",
+      "abv": "4.9",
+      "ibu": "21",
+      "status": "On Tap",
+      "id": 18
+    },
+    {
+      "name": "Grammatical Fiction",
+      "label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png",
+      "description": "IPA brewed and dry hopped with Citra, Comet & Simcoe hops.",
+      "style": "IPA - New England/Hazy",
+      "brewery": "Root + Branch",
+      "location": "Copiague, New York",
+      "abv": "7",
+      "ibu": "30",
+      "status": "On Tap",
+      "id": 19
+    },
+    {
+      "name": "Tank 7",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-10891_0c3e3_sm.jpeg",
+      "description": "A traditional Belgian-style farmhouse ale, the perfect combination of elements came together in their #7 fermenter. ",
+      "style": "Farmhouse Ale - Saison",
+      "brewery": "Boulevard Brewing Co.",
+      "location": "Kansas City, Missouri",
+      "abv": "8.5",
+      "ibu": "38",
+      "status": "X",
+      "id": 20
+    },
+    {
+      "name": "Unfiltered Wheat Beer",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-10501_0b26b_sm.jpeg",
+      "description": "A lively, refreshing ale with a natural citrusy flavor and distinctive cloudy appearance. ",
+      "style": "American Pale Wheat",
+      "brewery": "Boulevard Brewing Co.",
+      "location": "Kansas City, Missouri",
+      "abv": "4.4",
+      "ibu": "14",
+      "status": "Coming Soon",
+      "id": 21
     }
   ]
 }
