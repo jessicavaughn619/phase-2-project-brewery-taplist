@@ -299,6 +299,18 @@
       "ibu": "33",
       "status": "Inventory",
       "id": 25
+    },
+    {
+      "name": "IPA",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-4039_ddfd9_sm.jpeg",
+      "description": "A citrus and pine hop profile balanced by a subtle caramel sweetness are standard for a classic American IPA.",
+      "style": "IPA - American",
+      "brewery": "Southern Tier Brewing Company",
+      "location": "Lakewood, New York",
+      "abv": "7",
+      "ibu": "60",
+      "status": "On Tap",
+      "id": 26
     }
   ]
 }
