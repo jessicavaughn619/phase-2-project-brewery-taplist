@@ -287,6 +287,18 @@
       "ibu": "6",
       "status": "Coming Soon",
       "id": 24
+    },
+    {
+      "name": "Pumking",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-4886_753be_sm.jpeg",
+      "description": "Pumpkin puree and pie spices, malty, bready; cinnamon dominates with nutmeg and vanilla in the background.",
+      "style": "Pumpkin / Yam Beer",
+      "brewery": "Southern Tier Brewing Company",
+      "location": "Lakewood, New York",
+      "abv": "8.6",
+      "ibu": "33",
+      "status": "Inventory",
+      "id": 25
     }
   ]
 }
