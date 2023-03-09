@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./AddBeer.css";
 
 function AddBeer({ onAddNewBeer }) {
@@ -12,8 +13,10 @@ function AddBeer({ onAddNewBeer }) {
     const [ibu, setIbu] = useState("");
     const [status, setStatus] = useState("");
 
-    function handleSubmit() {
-        alert("New beer added!");
+    const history = useHistory();
+
+    function handleSubmit(e) {
+        e.preventDefault();
         const formData = {
             name,
             label,
@@ -33,7 +36,16 @@ function AddBeer({ onAddNewBeer }) {
             body: JSON.stringify(formData),
         })
         .then(res => res.json())
-        .then(newBeer => onAddNewBeer(newBeer))
+        .then(newBeer => {
+            onAddNewBeer(newBeer);
+            if (formData.status === "Inventory") {
+            history.push("/inventory");
+            } else {
+                history.push("/");
+            }
+        })
+        .catch(err => console.log(err))
+        alert("New beer added!");
     }
 
     return (
@@ -93,11 +105,13 @@ function AddBeer({ onAddNewBeer }) {
                 <select 
                 value={status} 
                 required
-                onChange={(e) => setStatus(e.target.value)}>
-                    <option>---</option>
+                onChange={(e) => setStatus(e.target.value)}
+                >
+                    <option value="">---</option>
+                    <option>Inventory</option>
                     <option>On Tap</option>
                     <option>Coming Soon</option>
-                    <option>X</option>
+                    
                 </select>
                 <br />
                 <button className="submit-button">Add Beer</button>

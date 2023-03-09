@@ -12,13 +12,10 @@ const beersOnTap = beers.filter((beer) => beer.status === "On Tap");
 
 const beersComingSoon = beers.filter((beer) => beer.status === "Coming Soon");
 
-const updatedBeers = beers.filter((beer) => {
-    if (beer.name.toLowerCase().includes(search.toLowerCase())) {
-        return true;
-    } else if (beer.style.toLowerCase().includes(search.toLowerCase())) {
-        return true;
-    }
-});
+const filteredBeers = beers.filter((beer) => 
+    (beer.name.toLowerCase().includes(search.toLowerCase())) || 
+    (beer.style.toLowerCase().includes(search.toLowerCase())
+));
 
     return (
         <div className="beer-list">
@@ -31,7 +28,7 @@ const updatedBeers = beers.filter((beer) => {
                 </Route>
                 <Route path="/inventory">
                     <Inventory 
-                    beers={updatedBeers}
+                    beers={filteredBeers}
                     search={search}
                     onSearch={onSearch}
                     onUpdateInventory={onUpdateInventory}/>
@@ -39,6 +36,9 @@ const updatedBeers = beers.filter((beer) => {
                 <Route path="/addbeer">
                     <AddBeer 
                     onAddNewBeer={onAddNewBeer}/>
+                </Route>
+                <Route path="*">
+                    <h1>404 Page Not Found</h1>
                 </Route>
             </Switch>
         </div>

@@ -16,7 +16,7 @@ useEffect(() => {
 }, [])
 
 function handleAddNewBeer(newBeer) {
-    const updatedBeers = [{...beers, newBeer}];
+    const updatedBeers = [...beers, newBeer];
     setBeers(updatedBeers);
 }
 

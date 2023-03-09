@@ -22,7 +22,7 @@
       "location": "Windsor, California",
       "abv": 10.25,
       "ibu": 0,
-      "status": "On Tap"
+      "status": "Inventory"
     },
     {
       "id": 3,
@@ -251,6 +251,42 @@
       "ibu": "14",
       "status": "Coming Soon",
       "id": 21
+    },
+    {
+      "name": "Dark Truth Stout",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-10589_a2513_sm.jpeg",
+      "description": "Layers of complex flavors slowly emerge from the glass: espresso, roasted fig, crème brulée. ",
+      "style": "Stout - Imperial/Double",
+      "brewery": "Boulevard Brewing Co.",
+      "location": "Kansas City, Missouri",
+      "abv": "9.7",
+      "ibu": "60",
+      "status": "On Tap",
+      "id": 22
+    },
+    {
+      "name": "Nutcracker Ale",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-10376_655f1_sm.jpeg",
+      "description": "This hearty, warming brew is a classic winter ale, deep amber in color, with hints of molasses balanced by the “spiciness” of Chinook hops.",
+      "style": "Winter Ale",
+      "brewery": "Boulevard Brewing Co.",
+      "location": "Kansas City, Missouri",
+      "abv": "7.8",
+      "ibu": "38",
+      "status": "X",
+      "id": 23
+    },
+    {
+      "name": "Jam Band",
+      "label": "https://assets.untappd.com/site/beer_logos/beer-2483160_1d7a5_sm.jpeg",
+      "description": "Jam Band burst onto the scene this year as an improvised fusion of dark berry flavors and zippy citrus chords.",
+      "style": "Fruit Beer",
+      "brewery": "Boulevard Brewing Co.",
+      "location": "Kansas City, Missouri",
+      "abv": "5.9",
+      "ibu": "6",
+      "status": "Coming Soon",
+      "id": 24
     }
   ]
 }

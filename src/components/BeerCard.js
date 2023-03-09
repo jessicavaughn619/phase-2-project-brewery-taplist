@@ -55,11 +55,11 @@ function BeerCard({ beer, manageInventory, onUpdateInventory }) {
                 onChange={handleInventoryChange} 
                 defaultValue={status}>
                     <option
+                    value="Inventory">Inventory</option>
+                    <option
                     value="On Tap">On Tap</option>
                     <option
                     value="Coming Soon">Coming Soon</option>
-                    <option
-                    value="x">X</option>
                 </select>
             </div> : null}
         </div>
