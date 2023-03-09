@@ -24,7 +24,7 @@ function Inventory({ beers, onUpdateInventory, search, onSearch }) {
                 />
             </div>
             <div className="cards">
-                <Card.Group itemsPerRow={3}>{beerList}</Card.Group>
+                <Card.Group>{beerList}</Card.Group>
             </div>
         </div>
     )
