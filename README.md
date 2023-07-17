@@ -2,6 +2,10 @@
 
 As a homebrewer living in Denver, Colorado, I visit breweries often. Over the past few years, many breweries have moved from the traditional chalkboard displaying their tap list to applications that display the information dynamically. This brewery tap list application is perfect for any homebrewer who would like to add their own beers to a display board or for brewery owners who need to display a lot of beers and keep track of the rotating lists.
 
+## Walkthrough
+
+<a href="https://www.youtube.com/watch?v=KThVwCYGJ3Q" title="Brewery Taplist Application Walkthrough"><img src="./src/images/brewery-play.jpeg" height="200px" alt="Brewery Taplist Walkthrough" /></a>
+
 ## Installation
 
 Fork and clone a copy of the repository Install dependencies by running $ npm install. 
